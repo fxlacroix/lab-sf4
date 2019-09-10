@@ -20,10 +20,13 @@ Encore
      * Add 1 entry for each "page" of your app
      * (including one that's included on every page - e.g. "app")
      *
-     * Each entry will result in one JavaScript file (e.g. app.js)
+     * Each entry will result in one JavaScript file (e.g. )
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/js/app.js')
+    .addEntry('game1', './assets/game1/js/App.js')
+    .addEntry('game2', './assets/game2/js/App.js')
+    .addEntry('vue', './assets/game3/js/App.js')
+
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
@@ -52,6 +55,9 @@ Encore
 
     // enables Sass/SCSS support
     .enableSassLoader()
+    .enableVueLoader(() => {}, {
+        useJsx: true
+    })
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()

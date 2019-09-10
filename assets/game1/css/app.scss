@@ -1,0 +1,42 @@
+body{
+    background: #efefef;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+canvas{
+    background: white;
+    float: left;
+}
+
+.game-container{
+
+    float: left;
+    display: block;
+    margin-left: 10px;
+}
+
+.sprite{
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+.luigi{
+    background: url('../image/picto-luigi.png');
+    background-repeat: no-repeat;
+}
+
+.charles{
+    background-image: url('../image/picto-charles.png');
+    background-repeat: no-repeat;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}

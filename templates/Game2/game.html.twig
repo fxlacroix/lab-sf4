@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('game2') }}
+{% endblock %}
+{% block body %}
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('game2') }}
+{% endblock %}

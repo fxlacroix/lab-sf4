@@ -1,0 +1,68 @@
+
+// Add a listener to "getUserInfo" event
+// dispatcher.addListener('getUserInfo', (details) => {
+//     console.log(details);
+// });
+// // Calling the API and dispatch the response data
+// dispatcher.dispatch('getUserInfo', {
+//     username: 'John',
+//     accountType: 'admin'
+// });
+
+//
+// var fg = document.getElementById('fg')
+// var bg = document.getElementById('bg')
+//
+// var fg_ctx = fg.getContext('2d')
+// var bg_ctx = bg.getContext('2d')
+//
+// let x = 100
+// let y = 100
+// let keys = []
+// let last = {x: x, y: y}
+// let speed = 5
+//
+//
+// addEventListener('keydown', (event) => {
+//     keys[event.key] = true
+// })
+//
+// addEventListener('keyup', (event) => {
+//     keys[event.key] = false
+// })
+//
+// background(bg_ctx)
+// foreground(fg_ctx)
+//
+// function background(ctx) {
+//     ctx.fillStyle = 'black'
+//     ctx.fillRect(0, 0, bg.width, bg.height)
+// }
+//
+// function foreground(ctx) {
+//     listenKey()
+//     ctx.clearRect(last.x, last.y, 64 , 64)
+//     ctx.fillStyle = 'red'
+//     ctx.fillRect(x, y, 64, 64)
+//
+//     requestAnimationFrame(function(){
+//         foreground(ctx)
+//     })
+// }
+//
+// function listenKey() {
+//
+//     last = {x: x, y: y}
+//     if (keys.ArrowUp) {
+//         y -= speed
+//     }
+//     if (keys.ArrowDown) {
+//         y += speed
+//     }
+//     if (keys.ArrowLeft) {
+//         x -= speed
+//     }
+//     if (keys.ArrowRight) {
+//         x += speed
+//     }
+// }
